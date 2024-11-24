@@ -16,6 +16,25 @@
                 </li>
             {% endfor %}
         </ul>
+
+        <!-- Navegación de Paginación -->
+        <div class="pagination">
+            <span class="step-links">
+                {% if items.has_previous %}
+                    <a href="?page=1">Primera</a>
+                    <a href="?page={{ items.previous_page_number }}">Anterior</a>
+                {% endif %}
+
+                <span class="current">
+                    Página {{ items.number }} de {{ items.paginator.num_pages }}
+                </span>
+
+                {% if items.has_next %}
+                    <a href="?page={{ items.next_page_number }}">Siguiente</a>
+                    <a href="?page={{ items.paginator.num_pages }}">Última</a>
+                {% endif %}
+            </span>
+        </div>
     {% else %}
         <p>No hay elementos disponibles.</p>
     {% endif %}

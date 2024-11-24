@@ -17,3 +17,30 @@
 .item-list li:hover {
     background-color: #f1f1f1;
 }
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+.pagination .step-links a {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.pagination .step-links a:hover {
+    background-color: #0056b3;
+}
+
+.pagination .current {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+}

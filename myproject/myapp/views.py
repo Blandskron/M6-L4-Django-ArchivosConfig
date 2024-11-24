@@ -11,12 +11,11 @@ def item_list(request: HttpRequest) -> HttpResponse:
     except DatabaseError:
         items = []
 
-    paginator = Paginator(items, 10)  # 10 items por página
+    paginator = Paginator(items, 10)  # 10 ítems por página
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
 
     return render(request, 'myapp/item_list.html', {'items': page_obj})
-
 
 """
 from django.views.generic import ListView
