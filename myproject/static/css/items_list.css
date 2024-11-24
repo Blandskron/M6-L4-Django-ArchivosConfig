@@ -1,0 +1,19 @@
+/* Item List Styles */
+.item-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item-list li {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.item-list li:hover {
+    background-color: #f1f1f1;
+}

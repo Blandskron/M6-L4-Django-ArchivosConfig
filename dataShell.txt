@@ -1,0 +1,20 @@
+python manage.py shell
+
+from myapp.models import Item
+
+# Datos de ejemplo
+items_data = [
+    {"name": "Laptop", "description": "Una laptop poderosa para el trabajo y entretenimiento.", "price": 1200.99},
+    {"name": "Teclado", "description": "Teclado mecánico RGB de alta calidad.", "price": 75.50},
+    {"name": "Monitor", "description": "Monitor 4K UHD de 27 pulgadas.", "price": 350.00},
+    {"name": "Mouse", "description": "Mouse inalámbrico con diseño ergonómico.", "price": 25.99},
+    {"name": "Audífonos", "description": "Audífonos con cancelación de ruido activa.", "price": 99.90},
+]
+
+# Carga de datos en la base de datos
+for item_data in items_data:
+    item, created = Item.objects.get_or_create(**item_data)
+    if created:
+        print(f"Item creado: {item.name}")
+    else:
+        print(f"Item ya existente: {item.name}")
