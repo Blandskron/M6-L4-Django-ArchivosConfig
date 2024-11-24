@@ -123,18 +123,3 @@ Este proyecto es una aplicación web desarrollada en **Django 5.1.3**, diseñada
    - Configura `DATABASES` en `settings.py` para usar PostgreSQL en lugar de SQLite.
 
 ---
-
-## **Próximos Pasos**
-- Integrar autenticación para usuarios.
-- Añadir soporte para crear, editar y eliminar ítems (CRUD completo).
-- Mejorar el diseño responsivo para dispositivos móviles.
-- Desplegar en un entorno de producción (Heroku, AWS, etc.).
-
----
-
-## **Agradecimientos**
-Este proyecto fue desarrollado como una introducción a Django, destacando las buenas prácticas en desarrollo web. Si tienes preguntas o sugerencias, no dudes en contactar al autor.
-
----
-
-¡Espero que disfrutes este proyecto y lo uses como base para aplicaciones más complejas! 🚀
